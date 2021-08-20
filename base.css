@@ -12,34 +12,58 @@
   font-size: 16px;
 
   /* Primary */
+  --orange: #f16718;
+  --orange-light: #ff9b62;
 
   /* Neutral */
+  --black: #162542;
+  --gray: #7b8bad;
+  --gray-light: #e8eff2;
+  --white: #ffffff;
 
   /* Typography */
-  --h1: 1.75rem;
+  --h1: 3.5rem;
+  --h1-line-height: 56px;
+
+  --h2: 2rem;
+  --h2-line-height: 36px;
+
+  --h3: 1.5rem;
+  --h3-line-height: 28px;
 
   --body: 1rem;
+  --body-line-height: 26px;
 }
 
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
 }
 
 h1 {
   font-size: var(--h1);
+  line-height: var(--h1-line-height);
+}
+
+h2 {
+  font-size: var(--h2);
+  line-height: var(--h2-line-height);
+}
+
+h3 {
+  font-size: var(--h3);
+  line-height: var(--h3-line-height);
 }
 
 .body-text {
   font-size: var(--body);
+  line-height: var(--body-line-height);
 }
 
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   :root {
-    --h1: 22px;
-
-    --body: 0.938rem;
+    --h1: 3rem;
+    --h1-line-height: 48px;
   }
 }
