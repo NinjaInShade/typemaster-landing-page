@@ -31,11 +31,18 @@
   --h3: 1.5rem;
   --h3-line-height: 28px;
 
+  --body-l: 1.125rem;
+  --body-l-line-height: 26px;
+
   --body: 1rem;
   --body-line-height: 26px;
 
   /* Other */
   --max-width: 1100px;
+}
+
+body {
+  overflow: hidden;
 }
 
 h1,
@@ -59,6 +66,11 @@ h3 {
   line-height: var(--h3-line-height);
 }
 
+.body-l-text {
+  font-size: var(--body-l);
+  line-height: var(--body-l-line-height);
+}
+
 .body-text {
   font-size: var(--body);
   line-height: var(--body-line-height);
@@ -68,5 +80,7 @@ h3 {
   :root {
     --h1: 3rem;
     --h1-line-height: 48px;
+
+    --body-l: 1rem;
   }
 }

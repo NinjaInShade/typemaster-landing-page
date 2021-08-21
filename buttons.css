@@ -35,3 +35,9 @@
   background-color: var(--black);
   color: #fff;
 }
+
+@media (max-width: 375px) {
+  .btn {
+    padding: 11px 14px;
+  }
+}
