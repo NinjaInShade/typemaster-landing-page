@@ -8,6 +8,7 @@
 }
 
 :root {
+  overflow-x: hidden;
   scroll-behavior: smooth;
   font-size: 16px;
 
@@ -39,10 +40,6 @@
 
   /* Other */
   --max-width: 1100px;
-}
-
-body {
-  overflow-x: hidden;
 }
 
 h1,
