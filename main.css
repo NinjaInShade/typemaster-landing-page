@@ -71,9 +71,11 @@
 
 .product-details-container {
   margin: 0 auto;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
   align-items: center;
+  gap: 30px;
   position: relative;
   max-width: var(--max-width);
 }
@@ -85,10 +87,26 @@
 }
 
 .product-detail-img-container {
+  position: relative;
+  max-width: 225px;
   margin-right: 30px;
+  width: 100%;
+}
+
+.product-detail-img-container::before {
+  mix-blend-mode: multiply;
+  position: absolute;
+  content: '';
+  background-color: var(--orange);
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
 }
 
 #product-details-img-1 {
+  width: 100%;
 }
 
 #product-details-img-2 {
@@ -97,7 +115,8 @@
 }
 
 .product-details-content {
-  margin-left: 125px;
+  max-width: 225px;
+  margin-left: 95px;
 }
 
 .product-details-title {
@@ -112,6 +131,10 @@
 @media (max-width: 1150px) {
   .header-img {
     border-radius: 20px 0 0 20px;
+  }
+
+  .product-details-img {
+    min-width: 0;
   }
 }
 
@@ -134,6 +157,38 @@
 
   .header-content {
     min-width: 340px;
+  }
+
+  .product-details-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto;
+    align-items: center;
+    row-gap: 72px;
+    column-gap: 30px;
+  }
+
+  .product-details-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: none;
+    grid-column: 1 / 3;
+    margin-left: 0;
+  }
+
+  .product-details-subtitle {
+    max-width: 400px;
+    margin-left: 20px;
+    margin-top: 0;
+  }
+
+  .product-detail-img-container {
+    margin-right: 0;
+  }
+
+  .product-details-img {
+    height: 320px;
   }
 }
 
@@ -164,10 +219,42 @@
   .header-subtitle {
     margin: 32px 0;
   }
-}
 
-@media (max-width: 375px) {
+  .product-details-container {
+    align-items: center;
+    row-gap: 75px;
+    column-gap: 24px;
+  }
+
+  .product-details-content {
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 24px;
+  }
+
+  .product-details-title,
+  .product-details-subtitle {
+    text-align: center;
+  }
+
+  .product-details-subtitle {
+    margin: 24px 0 0 0;
+  }
+
+  .product-details-img {
+    height: 190px;
+  }
+
+  .product-details {
+    padding: 0 24px 0 0;
+  }
+
   .navbar {
     padding: 24px 24px 64px 24px;
+  }
+
+  .product-detail-img-container::before,
+  #product-details-img-1 {
+    border-radius: 0 20px 20px 0;
   }
 }
