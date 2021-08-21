@@ -62,7 +62,55 @@
       </header>
 
       <!-- Product details -->
-      <section></section>
+      <section class="product-details">
+        <div class="product-details-container">
+          <img
+            src="./assets/shared/pattern-square.svg"
+            aria-hidden="true"
+            alt="Decorative square"
+            class="product-details-decorative-img"
+          />
+          <div class="product-detail-img-container">
+            <img
+              srcset="
+                ./assets/mobile/image-phone-and-keyboard.jpg  258w,
+                ./assets/tablet/image-phone-and-keyboard.jpg  428w,
+                ./assets/desktop/image-phone-and-keyboard.jpg 510w
+              "
+              sizes="(max-width: 768px) 428px,
+                (max-width: 375px) 258px,
+                      510px
+                    "
+              class="product-details-img"
+              alt="Birds-eye view of the
+              typemaster keyboard."
+              id="product-details-img-1"
+            />
+          </div>
+          <img
+            srcset="
+              ./assets/mobile/image-glass-and-keyboard.jpg  440w,
+              ./assets/tablet/image-glass-and-keyboard.jpg  888w,
+              ./assets/desktop/image-glass-and-keyboard.jpg 887w
+            "
+            sizes="(max-width: 768px) 888px,
+          (max-width: 375px) 440px,
+          887px
+        "
+            class="product-details-img"
+            alt="Side view of the
+          typemaster keyboard."
+            id="product-details-img-2"
+          />
+          <div class="product-details-content">
+            <h2 class="product-details-title">Mechanical Wireless Keyboard</h2>
+            <p class="product-details-subtitle">
+              The Typemaster keyboard boasts top-notch build and practical design. It offers a wide variety of switches
+              and keycaps, along with reliable wireless connectivity.
+            </p>
+          </div>
+        </div>
+      </section>
 
       <!-- Features -->
       <!-- Footer -->
