@@ -161,6 +161,20 @@
   color: var(--gray);
 }
 
+.footer {
+  margin-bottom: 48px;
+}
+
+.footer-text {
+  display: block;
+  text-align: center;
+  color: var(--gray);
+}
+
+.footer-text span {
+  font-weight: 900;
+}
+
 @media (max-width: 1150px) {
   .header-img {
     border-radius: 20px 0 0 20px;
@@ -237,6 +251,10 @@
 
   .feature-title {
     margin-top: 40px;
+  }
+
+  .footer {
+    margin-bottom: 42px;
   }
 }
 
@@ -328,5 +346,9 @@
 
   .feature-title {
     margin-top: 48px;
+  }
+
+  .footer {
+    margin-bottom: 50px;
   }
 }
