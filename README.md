@@ -24,13 +24,13 @@ Users should be able to:
 
 ### Screenshot
 
-<!-- ![](./screenshots/Desktop_solution.png) -->
-<!-- ![](./screenshots/Mobile_solution.png) -->
+![](./screenshots/Desktop_solution.png)
+![](./screenshots/Mobile_solution.png)
 
 ### Links
 
-<!-- - Solution URL: (https://www.frontendmentor.io/solutions/responsive-order-summary-card-TFXa8ZDRV) -->
-<!-- - Live Site URL: (https://lm-order-summary-component.netlify.app/) -->
+- Solution URL: (https://www.frontendmentor.io/solutions/responsive-pre-launch-landing-page-Ih6Z6R9NC)
+- Live Site URL: (https://lm-typemaster-landing-page.netlify.app/)
 
 ## My process
 
@@ -42,7 +42,9 @@ Users should be able to:
 
 ### What I learned
 
-Not done yet.
+I practiced the mix-blend-mode, which was required on the orange overlay on one of the images, however it mixed with the colours of the image.
+
+I also used &nsbp for the first time in html which is non breaking space to create extra space between letters in the footer text.
 
 ## Author
 
